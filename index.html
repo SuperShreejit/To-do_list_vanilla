@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do-list</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="main">
+    <h1 class="title">Stuff I need to do</h1>
+    <div class="all-tasks">
+      <h2 class="task-list-title">My lists</h2>
+      <ul class="task-list" data-lists>
+      </ul>
+      <form action="#" data-new-list-form>
+        <input type="text" class="new list-input" placeholder="add a new list" aria-label="add a new list name"data-new-list-input>
+        <button type="submit" class="btn list-btn" aria-label="create new list">+</button>
+      </form>
+    </div>
+    <div class="todo-list" id="todo-list">
+      <div class="todo-header">
+        <h2 class="todo-list-title" id="todo-list-title">General</h2>
+        <span class="task-count" id="task-count">0 tasks remaining</span>
+      </div>
+      <div class="todo-body">
+        <div class="tasks-list" data-tasks>
+        </div>
+        <div class="new-task-creator">
+          <form action="#" data-new-task-form>
+            <input type="text" class="new task-input" placeholder="add a new task" aria-label="add a new task name" data-new-task-input>
+            <button type="submit" class="btn task-btn" aria-label="create new task">+</button>
+          </form>
+        </div>
+        <div class="task-remover">
+          <button class="btn delete-btn" data-delete-task-btn>Clear Completed Tasks</button>
+          <button class="btn delete-btn" data-delete-list-btn>Delete List</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
